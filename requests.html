@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Art - Thumb Tailor</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <span class="logo-icon">✂️</span>
+            <h1>Thumb Tailor</h1>
+        </div>
+        <nav class="side-nav">
+            <a href="index.html" class="nav-item">
+                <span class="material-icons">home</span>
+                <span>Home</span>
+            </a>
+            <a href="artists.html" class="nav-item">
+                <span class="material-icons">brush</span>
+                <span>Artists</span>
+            </a>
+            <a href="catalog.html" class="nav-item">
+                <span class="material-icons">collections</span>
+                <span>Catalog</span>
+            </a>
+            <a href="requests.html" class="nav-item active">
+                <span class="material-icons">request_quote</span>
+                <span>Requests</span>
+            </a>
+        </nav>
+        <button class="theme-button" id="themeToggle">Light Mode</button>
+    </div>
+
+    <main class="main-content">
+        <header class="top-header">
+            <div class="search-bar">
+                <span class="material-icons">search</span>
+                <input type="text" placeholder="Search artists or styles...">
+            </div>
+            <div class="user-menu">
+                <a href="requests.html" class="btn-primary">
+                    <span class="material-icons">add_circle</span>
+                    Post Request
+                </a>
+                <span class="material-icons">account_circle</span>
+            </div>
+        </header>
+
+        <section class="request-form">
+            <h2>Commission Request</h2>
+            <form id="commissionForm">
+                <div class="form-group">
+                    <label>Project Type</label>
+                    <select required>
+                        <option value="">Select project type</option>
+                        <option>YouTube Thumbnail</option>
+                        <option>Channel Art</option>
+                        <option>Illustration</option>
+                        <option>Logo Design</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Project Description</label>
+                    <textarea rows="5" required placeholder="Describe your vision in detail..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Reference Images</label>
+                    <div class="file-upload">
+                        <input type="file" accept="image/*" multiple>
+                        <span class="material-icons">upload</span>
+                        Drag files or click to upload
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Deadline</label>
+                    <input type="date" required>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    <span class="material-icons">send</span>
+                    Submit Request
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

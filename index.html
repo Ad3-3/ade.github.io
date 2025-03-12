@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumb Tailor - Art Commission Platform</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <span class="logo-icon">✂️</span>
+            <h1>Thumb Tailor</h1>
+        </div>
+        <nav class="side-nav">
+            <a href="index.html" class="nav-item active">
+                <span class="material-icons">home</span>
+                <span>Home</span>
+            </a>
+            <a href="artists.html" class="nav-item">
+                <span class="material-icons">brush</span>
+                <span>Artists</span>
+            </a>
+            <a href="catalog.html" class="nav-item">
+                <span class="material-icons">collections</span>
+                <span>Catalog</span>
+            </a>
+            <a href="requests.html" class="nav-item">
+                <span class="material-icons">request_quote</span>
+                <span>Requests</span>
+            </a>
+        </nav>
+        <button class="theme-button" id="themeToggle">Light Mode</button>
+    </div>
+
+    <main class="main-content">
+        <header class="top-header">
+            <div class="search-bar">
+                <span class="material-icons">search</span>
+                <input type="text" placeholder="Search artists or styles...">
+            </div>
+            <div class="user-menu">
+                <a href="requests.html" class="btn-primary">
+                    <span class="material-icons">add_circle</span>
+                    Post Request
+                </a>
+                <span class="material-icons">account_circle</span>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Craft Your Perfect Visual Identity</h2>
+                <p>Connect with professional artists specializing in YouTube thumbnails and digital content creation</p>
+                <div class="cta-group">
+                    <a href="artists.html" class="btn-primary">
+                        <span class="material-icons">brush</span>
+                        Browse Artists
+                    </a>
+                    <a href="requests.html" class="btn-secondary">
+                        <span class="material-icons">add_circle</span>
+                        New Request
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section">
+            <h3>Creator Testimonials</h3>
+            <div class="carousel-container">
+                <div class="carousel-track"></div>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <h3>Why Choose Thumb Tailor?</h3>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <span class="material-icons">verified_user</span>
+                    <h4>Verified Artists</h4>
+                    <p>All creators undergo strict quality checks and portfolio reviews</p>
+                </div>
+                <div class="feature-card">
+                    <span class="material-icons">speed</span>
+                    <h4>Fast Turnaround</h4>
+                    <p>Average delivery time of 24 hours for priority requests</p>
+                </div>
+                <div class="feature-card">
+                    <span class="material-icons">loop</span>
+                    <h4>Unlimited Revisions</h4>
+                    <p>Request changes until you're 100% satisfied</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

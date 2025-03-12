@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artists - Thumb Tailor</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img class="lightbox-img" src="" alt="Enlarged artwork">
+    </div>
+
+    <div class="sidebar">
+        <div class="logo">
+            <span class="logo-icon">✂️</span>
+            <h1>Thumb Tailor</h1>
+        </div>
+        <nav class="side-nav">
+            <a href="index.html" class="nav-item">
+                <span class="material-icons">home</span>
+                <span>Home</span>
+            </a>
+            <a href="artists.html" class="nav-item active">
+                <span class="material-icons">brush</span>
+                <span>Artists</span>
+            </a>
+            <a href="catalog.html" class="nav-item">
+                <span class="material-icons">collections</span>
+                <span>Catalog</span>
+            </a>
+            <a href="requests.html" class="nav-item">
+                <span class="material-icons">request_quote</span>
+                <span>Requests</span>
+            </a>
+        </nav>
+        <button class="theme-button" id="themeToggle">Light Mode</button>
+    </div>
+
+    <main class="main-content">
+        <header class="top-header">
+            <div class="search-bar">
+                <span class="material-icons">search</span>
+                <input type="text" placeholder="Search artists or styles...">
+            </div>
+            <div class="user-menu">
+                <a href="requests.html" class="btn-primary">
+                    <span class="material-icons">add_circle</span>
+                    Post Request
+                </a>
+                <span class="material-icons">account_circle</span>
+            </div>
+        </header>
+
+        <!-- Peachy Section -->
+        <section class="artist-section">
+            <div class="artist-header">
+                <div class="artist-avatar" style="background: #FFB6C1; width: 80px; height: 80px; border-radius: 50%;"></div>
+                <div>
+                    <h2 class="artist-name">Peach</h2>
+                    <p>Minecraft & Gaming Thumbnail Specialist</p>
+                </div>
+            </div>
+            <p class="artist-bio">
+                With 1+ years of Photoshop expertise, Peachy creates dynamic gaming thumbnails using custom mods 
+                and 3D posing software. Specializing in Minecraft content with vibrant, action-packed compositions.
+            </p>
+            <div class="art-grid">
+                <a href="squid game2.png" class="artwork-card">
+                    <img src="squid game2.png" alt="Minecraft Action Scene">
+                </a>
+                <a href="charley tn 3.png" class="artwork-card">
+                    <img src="charley tn 3.png" alt="Cyber Minecraft Concept">
+                </a>
+                <a href="fake thingy.png" class="artwork-card">
+                    <img src="fake thingy.png" alt="Fantasy Minecraft Scene">
+                </a>
+            </div>
+        </section>
+
+        <!-- Ade Section -->
+        <section class="artist-section">
+            <div class="artist-header">
+                <div class="artist-avatar" style="background: #ADD8E6; width: 80px; height: 80px; border-radius: 50%;"></div>
+                <div>
+                    <h2 class="artist-name">Ade</h2>
+                    <p>Conceptual Typographer & Visual Storyteller</p>
+                </div>
+            </div>
+            <p class="artist-bio">
+                Ade combines 2 years of Photoshop mastery with philosophical design, creating thought-provoking 
+                typography and layered visual metaphors. Specializes in meaningful quote designs and symbolic illustration creating thought provoking art.
+            </p>
+            <div class="art-grid">
+                <a href="BRIDGES.png" class="artwork-card">
+                    <img src="BRIDGES.png" alt="Architectural Typography">
+                </a>
+                <a href="flash.png" class="artwork-card">
+                    <img src="flash.png" alt="Motion Design Concept">
+                </a>
+                <a href="ok.png" class="artwork-card">
+                    <img src="ok.png" alt="Minimalist Lettering">
+                </a>
+                <a href="nothing.png" class="artwork-card">
+                    <img src="nothing.png" alt="Abstract Philosophy">
+                </a>
+                <a href="corteiz.png" class="artwork-card">
+                    <img src="corteiz.png" alt="Branding Design">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
